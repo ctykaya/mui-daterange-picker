@@ -16,7 +16,8 @@
         "lint": "./node_modules/.bin/eslint ./src --ext .js,.jsx,.ts,.tsx",
         "build": "rollup -c",
         "copy_publish_files": "cp ../README.md .",
-        "prepublish": "yarn run build && yarn run copy_publish_files"
+        "prepublish": "yarn run build && yarn run copy_publish_files",
+        "prepare": "npm run build"
     },
     "peerDependencies": {
         "@babel/runtime": "^7.16.7",
